@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: auto !important; 
+  overflow-x: hidden!important
+} 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -158,6 +163,12 @@ h3 {
 #main-container .container-element {
   width: 98% !important; 
 }
+
+/* #main-container .container-1 .main-aside .main-aside-content {
+  width: 95%;
+  position: fixed;
+  text-align: center;
+} */
 
 #main-container .container-element-2 .issue-navbar {
   display: flex;    
@@ -651,17 +662,14 @@ a:hover {
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* Media queries */
-
-@media (min-width: 769px) and (max-width: 1125px) {
+@media(min-width: 769px) and (max-width: 1024px) {
   #main-container .container-element-2 .content-grid .card {
-    height: 350px;
-    width: auto;
+    height: 330px !important;
   }
 }
 
-/* @media(max-width: 768px) and (min-width: 360px) */
 
-@media(max-width: 1024px) and (min-width: 360px) {
+@media(max-width: 768px) and (min-width: 360px) {
 
   html, body {
     width: auto !important; 
