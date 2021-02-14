@@ -1,4 +1,6 @@
 import * as data from '../../../mock.json';
+import User from '../../../images/user_1.svg';
+
 const word2 = data.done;
 
 const ans3 = word2.map((curElement: any, index: any) => {
@@ -13,7 +15,10 @@ const ans3 = word2.map((curElement: any, index: any) => {
             <div className="card-inner-data">
                 <div>
                     <p>Assignee</p>
-                    <p>{curElement.name} </p>
+                    <div className="card-inner-data-image">
+                        <img src={User} alt="" />
+                        <p>{curElement.name} </p>
+                    </div>
                 </div>
                 <div>
                     <p>Status</p>

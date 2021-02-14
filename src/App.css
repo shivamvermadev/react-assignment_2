@@ -240,7 +240,7 @@ h3 {
 
 .card {
   width: 100%;
-  height: 240px;
+  height: 280px;
   background-color: #fff;
   color: #3d4146;
   z-index: 2;
@@ -662,6 +662,29 @@ a:hover {
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* Media queries */
+
+@media(max-width: 359px) {
+  #main-container .container-1 {
+    display: none;
+  }
+
+  #main-container .container-element-2 .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #main-container .container-element-2 .issue-navbar {
+    text-align: center;
+  }
+
+  #main-container .container-element-2 .issue-navbar .issue-navbar-item-2 {
+    display: none; 
+  }
+
+  #main-header .logo input {
+    display: none;
+  }
+}
+
 @media(min-width: 769px) and (max-width: 1024px) {
   #main-container .container-element-2 .content-grid .card {
     height: 330px !important;
